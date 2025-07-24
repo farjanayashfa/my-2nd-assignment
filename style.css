@@ -1,0 +1,52 @@
+.navs{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    gap: 15px;
+    font-size: 2em;
+    text-decoration: none;
+    list-style: none;
+}
+.banner{
+    width: 1140px;
+    height: 461px;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 300px;
+    margin-right: 150px;
+justify-content: center;
+}
+.orange{
+    color: orangered;
+}
+.main-header{
+    justify-content: center;
+    text-align: center;
+}
+.chobi{
+
+}
+.our-plants{
+  padding: 10px;
+  display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   margin-left: 250px;
+   margin-right: 250px;
+   justify-content: center;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    background-color: orangered;
+    color: antiquewhite;
+    font-size:20px;
+    border-radius: 10px;
+}
