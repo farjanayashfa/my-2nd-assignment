@@ -177,7 +177,7 @@ footer {
   font-size: 28px;
   margin-bottom: 20px;
   justify-content: center;
-  
+
 }
 
 .newsletter form {
@@ -263,4 +263,100 @@ footer {
 .footer-social img {
   width: 24px;
   height: 24px;
+}
+
+/* ===== Mobile first default styles (less than 768px) ===== */
+nav .navs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+nav .items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.our-plants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 0 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.deals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.left-deals .deal-box,
+.right-deal {
+  height: 200px;
+}
+
+/* ===== Tablet and small laptop: ≥768px ===== */
+@media screen and (min-width: 768px) {
+  nav .navs {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .items {
+    flex-direction: row;
+  }
+  .banner {
+    flex-direction: row;
+    padding: 0 40px;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+  }
+  .our-plants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+  }
+  .deals-container {
+    flex-direction: row;
+  }
+}
+
+/* ===== Desktop: ≥1024px ===== */
+@media screen and (min-width: 1024px) {
+  .our-plants {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 60px;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .banner {
+    padding: 60px;
+  }
+  .deals-container {
+    gap: 30px;
+  }
+}
+
+/* ===== Extra-wide screens: ≥1280px ===== */
+@media screen and (min-width: 1280px) {
+  .our-plants {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
